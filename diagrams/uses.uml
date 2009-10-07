@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_GppZoLLIEd6iuMhlf5asRg" name="uses">
+  <elementImport xmi:id="_GqPPgLLIEd6iuMhlf5asRg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_GqPPgbLIEd6iuMhlf5asRg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_GqPPgrLIEd6iuMhlf5asRg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_GqPPg7LIEd6iuMhlf5asRg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_HmyXULLIEd6iuMhlf5asRg" name="i_log"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_MsTfoLLIEd6iuMhlf5asRg" name="you app"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_NwSsMLLIEd6iuMhlf5asRg" name="Modify Log Levels">
+    <extensionPoint xmi:id="_efKdQLLIEd6iuMhlf5asRg" name="from log4js configurator"/>
+    <extensionPoint xmi:id="_fUkbQLLIEd6iuMhlf5asRg" name="to front most log delegate"/>
+    <extensionPoint xmi:id="_FNTFgLLKEd6iuMhlf5asRg" name="NOT YET SUPPORTED"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_iM56ULLIEd6iuMhlf5asRg" memberEnd="_iM56UbLIEd6iuMhlf5asRg _iM56VLLIEd6iuMhlf5asRg" navigableOwnedEnd="_iM56VLLIEd6iuMhlf5asRg">
+    <ownedEnd xmi:id="_iM56UbLIEd6iuMhlf5asRg" name="src" type="_HmyXULLIEd6iuMhlf5asRg" association="_iM56ULLIEd6iuMhlf5asRg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iM56U7LIEd6iuMhlf5asRg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iM56UrLIEd6iuMhlf5asRg" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_iM56VLLIEd6iuMhlf5asRg" name="dst" type="_NwSsMLLIEd6iuMhlf5asRg" association="_iM56ULLIEd6iuMhlf5asRg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iM56VrLIEd6iuMhlf5asRg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iM56VbLIEd6iuMhlf5asRg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_jqxmgLLIEd6iuMhlf5asRg" name="Reload Config">
+    <extensionPoint xmi:id="_k7avALLIEd6iuMhlf5asRg" name="from your app"/>
+    <extensionPoint xmi:id="_aXaIQLLJEd6iuMhlf5asRg" name="to i_log then if log4j "/>
+    <extensionPoint xmi:id="_DqhEILLKEd6iuMhlf5asRg" name="NOT YET SUPPORTED"/>
+    <extensionPoint xmi:id="_d9SJILLREd6iuMhlf5asRg" name="config file or Java Object parameter"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_m2AMYLLIEd6iuMhlf5asRg" memberEnd="_m2AMYbLIEd6iuMhlf5asRg _m2AMZLLIEd6iuMhlf5asRg" navigableOwnedEnd="_m2AMZLLIEd6iuMhlf5asRg">
+    <ownedEnd xmi:id="_m2AMYbLIEd6iuMhlf5asRg" name="src" type="_HmyXULLIEd6iuMhlf5asRg" association="_m2AMYLLIEd6iuMhlf5asRg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m2AMY7LIEd6iuMhlf5asRg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2AMYrLIEd6iuMhlf5asRg" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_m2AMZLLIEd6iuMhlf5asRg" name="dst" type="_jqxmgLLIEd6iuMhlf5asRg" association="_m2AMYLLIEd6iuMhlf5asRg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m2AMZrLIEd6iuMhlf5asRg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2AMZbLIEd6iuMhlf5asRg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_nMKpoLLIEd6iuMhlf5asRg" memberEnd="_nMKpobLIEd6iuMhlf5asRg _nMKppLLIEd6iuMhlf5asRg" navigableOwnedEnd="_nMKppLLIEd6iuMhlf5asRg">
+    <ownedEnd xmi:id="_nMKpobLIEd6iuMhlf5asRg" name="src" type="_jqxmgLLIEd6iuMhlf5asRg" association="_nMKpoLLIEd6iuMhlf5asRg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nMKpo7LIEd6iuMhlf5asRg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nMKporLIEd6iuMhlf5asRg" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_nMKppLLIEd6iuMhlf5asRg" name="dst" type="_NwSsMLLIEd6iuMhlf5asRg" association="_nMKpoLLIEd6iuMhlf5asRg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nMKpprLIEd6iuMhlf5asRg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nMKppbLIEd6iuMhlf5asRg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_q9e_ILLIEd6iuMhlf5asRg" name="Delegate Log Output">
+    <extensionPoint xmi:id="_wUGegLLIEd6iuMhlf5asRg" name="from i_log"/>
+    <extensionPoint xmi:id="_yolCkLLIEd6iuMhlf5asRg" name="to log4j"/>
+    <extensionPoint xmi:id="_LOxfwLLKEd6iuMhlf5asRg" name="should go to the log4j level"/>
+    <extensionPoint xmi:id="_Sz7TQLLKEd6iuMhlf5asRg" name="should use the log4j formatting"/>
+    <extensionPoint xmi:id="_XEoPQLLREd6iuMhlf5asRg" name="delegation exc"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Le0jYLLJEd6iuMhlf5asRg" memberEnd="_Le0jYbLJEd6iuMhlf5asRg _Le0jZLLJEd6iuMhlf5asRg" navigableOwnedEnd="_Le0jZLLJEd6iuMhlf5asRg">
+    <ownedEnd xmi:id="_Le0jYbLJEd6iuMhlf5asRg" name="src" type="_MsTfoLLIEd6iuMhlf5asRg" association="_Le0jYLLJEd6iuMhlf5asRg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Le0jY7LJEd6iuMhlf5asRg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Le0jYrLJEd6iuMhlf5asRg" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_Le0jZLLJEd6iuMhlf5asRg" name="dst" type="_jqxmgLLIEd6iuMhlf5asRg" association="_Le0jYLLJEd6iuMhlf5asRg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Le0jZrLJEd6iuMhlf5asRg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Le0jZbLJEd6iuMhlf5asRg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_NPvHYLLJEd6iuMhlf5asRg" name="log4j"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SiWQgLLJEd6iuMhlf5asRg" memberEnd="_SiWQgbLJEd6iuMhlf5asRg _SiWQhLLJEd6iuMhlf5asRg" navigableOwnedEnd="_SiWQhLLJEd6iuMhlf5asRg">
+    <ownedEnd xmi:id="_SiWQgbLJEd6iuMhlf5asRg" name="src" type="_HmyXULLIEd6iuMhlf5asRg" association="_SiWQgLLJEd6iuMhlf5asRg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SiWQg7LJEd6iuMhlf5asRg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SiWQgrLJEd6iuMhlf5asRg" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_SiWQhLLJEd6iuMhlf5asRg" name="dst" type="_q9e_ILLIEd6iuMhlf5asRg" association="_SiWQgLLJEd6iuMhlf5asRg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SiWQhrLJEd6iuMhlf5asRg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SiWQhbLJEd6iuMhlf5asRg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_TdHPoLLJEd6iuMhlf5asRg" memberEnd="_TdHPobLJEd6iuMhlf5asRg _TdHPpLLJEd6iuMhlf5asRg" navigableOwnedEnd="_TdHPpLLJEd6iuMhlf5asRg">
+    <ownedEnd xmi:id="_TdHPobLJEd6iuMhlf5asRg" name="src" type="_q9e_ILLIEd6iuMhlf5asRg" association="_TdHPoLLJEd6iuMhlf5asRg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TdHPo7LJEd6iuMhlf5asRg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TdHPorLJEd6iuMhlf5asRg" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_TdHPpLLJEd6iuMhlf5asRg" name="dst" type="_NPvHYLLJEd6iuMhlf5asRg" association="_TdHPoLLJEd6iuMhlf5asRg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TdHPprLJEd6iuMhlf5asRg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TdHPpbLJEd6iuMhlf5asRg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Package>
