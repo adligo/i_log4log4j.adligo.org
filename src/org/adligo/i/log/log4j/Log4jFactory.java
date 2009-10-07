@@ -62,11 +62,14 @@ public class Log4jFactory implements I_LogFactory {
 
 	@Override
 	public synchronized void setInitalLogLevels(I_Collection iProxyLogs) {
+		//do nothing this expects to be staticly init 
+		/*
 		I_Iterator it = iProxyLogs.getIterator();
 		while (it.hasNext()) {
 			I_ProxyLog proxyLog = (I_ProxyLog) it.next();
 			proxyLog.addDelegate(new Log4jLog(proxyLog.getLogName()));
 		}
+		*/
 	}
 
 	@Override
