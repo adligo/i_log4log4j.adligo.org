@@ -44,6 +44,30 @@ public class Log4jLog implements Log, I_LogDelegate {
 		return false;
 	}
 
+	public short getLevel() {
+		if (logger.isEnabledFor(Level.TRACE)) {
+			return LOG_LEVEL_TRACE;
+		}
+		if (logger.isEnabledFor(Level.DEBUG)) {
+			return LOG_LEVEL_DEBUG;
+		}
+		if (logger.isEnabledFor(Level.INFO)) {
+			return LOG_LEVEL_INFO;
+		}
+		if (logger.isEnabledFor(Level.WARN)) {
+			return LOG_LEVEL_WARN;
+		}
+		if (logger.isEnabledFor(Level.ERROR)) {
+			return LOG_LEVEL_ERROR;
+		}
+		if (logger.isEnabledFor(Level.FATAL)) {
+			return LOG_LEVEL_FATAL;
+		}
+		if (logger.isEnabledFor(Level.ALL)) {
+			return LOG_LEVEL_ALL;
+		} 
+		return LOG_LEVEL_OFF;
+	}
     /**
      * @Override
      */
