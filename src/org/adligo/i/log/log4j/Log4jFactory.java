@@ -19,9 +19,8 @@ public class Log4jFactory implements I_LogFactory {
 	public static final String LOG_FACTORY_NAME = Log4jFactory.class.getName();
 	
 	private static final Map<String, I_LogDelegate> logs = new HashMap<String, I_LogDelegate>();
-	public static final Log4jFactory INSTANCE = new Log4jFactory();
 	
-	private Log4jFactory() {}
+	public Log4jFactory() {}
 	
 	@SuppressWarnings("unchecked")
 	@Override
