@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project basedir="." default="jar" name="i_log4log4j">
+<project basedir="." default="deploy" name="i_log4log4j">
 	<import file="${user.home}/conf/adligo/build.xml"/>
 </project>
