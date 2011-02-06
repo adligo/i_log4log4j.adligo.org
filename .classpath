@@ -4,8 +4,7 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/i_log"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/i_util"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/j2se_util"/>
 	<classpathentry kind="var" path="LOG4J_HOME/log4j-1.2.15.jar"/>
-	<classpathentry kind="var" path="LOG4J_HOME"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/jse_util"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
