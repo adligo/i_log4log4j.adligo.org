@@ -8,6 +8,7 @@ import org.adligo.i.log.client.I_LogFactory;
 import org.adligo.i.log.client.ProxyLog;
 import org.adligo.i.util.client.ClassUtils;
 import org.adligo.i.util.client.I_Collection;
+import org.adligo.i.util.client.I_ImmutableMap;
 import org.adligo.i.util.client.I_Iterator;
 import org.adligo.i.util.client.I_Map;
 
@@ -50,7 +51,7 @@ public class Log4jFactory implements I_LogFactory {
 	}
 
 	@Override
-	public void setInitalLogLevels(I_Map props, I_LogFactory p) {
+	public void setInitalLogLevels(I_ImmutableMap props, I_LogFactory p) {
 		//do nothing this is for async log config file responses like adligo_log.properties
 	}
 
