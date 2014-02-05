@@ -75,4 +75,10 @@ public class Log4jFactory implements I_LogFactory {
 			proxy.setLevel(log.getLevel());
 		}
 	}
+
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return Log4jFactory.class.getName();
+	}
 }
