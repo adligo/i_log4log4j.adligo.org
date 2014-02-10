@@ -1,4 +1,4 @@
-package org.adligo.i.log.log4j;
+package org.adligo.i.log4j;
 
 import java.util.HashMap;
 import java.util.Map;
