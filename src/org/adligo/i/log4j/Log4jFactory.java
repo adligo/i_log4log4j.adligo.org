@@ -3,14 +3,14 @@ package org.adligo.i.log4j;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.adligo.i.log.client.I_LogDelegate;
-import org.adligo.i.log.client.I_LogFactory;
-import org.adligo.i.log.client.ProxyLog;
-import org.adligo.i.util.client.ClassUtils;
-import org.adligo.i.util.client.I_Collection;
-import org.adligo.i.util.client.I_ImmutableMap;
-import org.adligo.i.util.client.I_Iterator;
-import org.adligo.i.util.client.I_Map;
+import org.adligo.i.log.shared.I_LogDelegate;
+import org.adligo.i.log.shared.I_LogFactory;
+import org.adligo.i.log.shared.ProxyLog;
+import org.adligo.i.util.shared.ClassUtils;
+import org.adligo.i.util.shared.I_Collection;
+import org.adligo.i.util.shared.I_ImmutableMap;
+import org.adligo.i.util.shared.I_Iterator;
+import org.adligo.i.util.shared.I_Map;
 
 public class Log4jFactory implements I_LogFactory {
 	/**

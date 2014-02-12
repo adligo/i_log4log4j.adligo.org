@@ -1,8 +1,8 @@
 package org.adligo.i.log4j;
 
-import org.adligo.i.log.client.I_LogDelegate;
-import org.adligo.i.log.client.Log;
-import org.adligo.i.log.client.SimpleLog;
+import org.adligo.i.log.shared.I_LogDelegate;
+import org.adligo.i.log.shared.Log;
+import org.adligo.i.log.shared.SimpleLog;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
