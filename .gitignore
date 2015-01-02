@@ -1,4 +1,5 @@
 bin/
+/build/
 classes/
 classes_e/
 i_log4log4j.jar
