@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<classpath>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="output" path="classes_e"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="var" path="FAB_REPO/org.apache.logging/log4j-1.2.17.jar"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/i_log.adligo.org"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/i_util.adligo.org"/>
-</classpath>
